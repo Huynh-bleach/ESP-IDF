@@ -1,0 +1,12 @@
+CMake Error at E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/tools/cmake/build.cmake:519 (message):
+  ERROR: The hash sum of the component "espressif/mdns(1.2.4)" does not match
+  the one recorded in your dependencies.lock file.  This could be due to a
+  potential spoofing of the download server, or your lock file may have
+  become corrupted.  Please review the lock file and verify the download
+  server's authenticity to ensure the component's security and integrity.
+
+Call Stack (most recent call first):
+  E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/tools/cmake/project.cmake:447 (idf_build_process)
+  CMakeLists.txt:13 (project)
+
+

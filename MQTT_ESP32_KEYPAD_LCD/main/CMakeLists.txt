@@ -1,0 +1,5 @@
+idf_component_register(SRCS "app_main.c"
+                    INCLUDE_DIRS "."
+                    REQUIRES ${pri_req}
+                    )
+target_compile_options(${COMPONENT_LIB} PRIVATE "-Wno-format")
