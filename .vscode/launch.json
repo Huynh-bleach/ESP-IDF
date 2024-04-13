@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "e:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main",
-      "program": "e:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/build/Debug/outDebug",
+      "cwd": "e:/ESP_IDF/ESP32_GITHUB/LORA_CLIENT/main",
+      "program": "e:/ESP_IDF/ESP32_GITHUB/LORA_CLIENT/main/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
