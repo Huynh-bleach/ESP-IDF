@@ -1,0 +1,37 @@
+[1/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/use_gp2timer.c.obj
+In file included from E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gptimer.h:11,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/use_gptimer/use_gptimer.h:4,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:2:
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c: In function 'example_alarm_cb':
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:22:38: warning: passing argument 1 of 'adc_oneshot_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   22 |     ESP_ERROR_CHECK(adc_oneshot_read((adc_oneshot_unit_handle_t *)(queue_timer_cb->param_handle), (adc_channel_t)(queue_timer_cb->param_other), &adc_value));
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                      |
+      |                                      struct adc_oneshot_unit_ctx_t **
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+In file included from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:14,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:5:
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:85:54: note: expected 'adc_oneshot_unit_handle_t' {aka 'struct adc_oneshot_unit_ctx_t *'} but argument is of type 'struct adc_oneshot_unit_ctx_t **'
+   85 | esp_err_t adc_oneshot_read(adc_oneshot_unit_handle_t handle, adc_channel_t chan, int *out_raw);
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:5:
+At top level:
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:21:20: warning: 'TagReadADC' defined but not used [-Wunused-variable]
+   21 | const static char *TagReadADC = "EXAMPLE";
+      |                    ^~~~~~~~~~
+[2/9] Linking C static library esp-idf\main\libmain.a
+[3/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D E:\ESP_IDF\ESP32_GITHUB\MQTT_ESP32_KEYPAD_LCD\build\bootloader\esp-idf\esptool_py && E:\ESP_IDF\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6710 bytes. 0x8f0 bytes (8%) free.
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable mqtt_ssl.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/build/mqtt_ssl.bin
+[7/7] cmd.exe /C "cd /D E:\ESP_IDF\ESP32_GITHUB\MQTT_ESP32_KEYPAD_LCD\build\esp-idf\esptool_py && E:\ESP_IDF\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/build/partition_table/partition-table.bin E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/build/mqtt_ssl.bin"
+mqtt_ssl.bin binary size 0x2ff10 bytes. Smallest app partition is 0x100000 bytes. 0xd00f0 bytes (81%) free.

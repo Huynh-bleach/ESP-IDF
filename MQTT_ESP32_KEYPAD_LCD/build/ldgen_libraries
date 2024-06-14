@@ -68,4 +68,5 @@ E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/build/esp-idf/nvs_memory/libnvs_me
 E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/build/esp-idf/library_mqtt_broker/liblibrary_mqtt_broker.a
 E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/build/esp-idf/espconfiguration/libespconfiguration.a
 E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/build/esp-idf/library_uart/liblibrary_uart.a
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/build/esp-idf/use_gptimer/libuse_gptimer.a
 E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/build/esp-idf/wifi_manager/libwifi_manager.a

@@ -1,0 +1,647 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D E:\ESP_IDF\ESP32_GITHUB\MQTT_ESP32_KEYPAD_LCD\build\bootloader\esp-idf\esptool_py && E:\ESP_IDF\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6710 bytes. 0x8f0 bytes (8%) free.
+[2/9] Building C object esp-idf/use_gptimer/CMakeFiles/__idf_use_gptimer.dir/use_gptimer.c.obj
+FAILED: esp-idf/use_gptimer/CMakeFiles/__idf_use_gptimer.dir/use_gptimer.c.obj 
+ccache E:\ESP_IDF\Espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -IE:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/build/config -IE:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/use_gptimer -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/newlib/platform_include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/FreeRTOS-Kernel/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/esp_additions/include/freertos -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/esp_additions/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include/soc -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include/soc/esp32 -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/port/esp32/. -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/port/esp32/private_include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/heap/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/log/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/soc/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/soc/esp32/. -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/soc/esp32/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/esp32/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/platform_port/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/include/esp32 -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32 -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_common/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/port/soc -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/port/include/private -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/xtensa/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/xtensa/esp32/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include/apps -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include/apps/sntp -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/lwip/src/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/port/esp32/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/port/esp32/include/arch -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/deprecated -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/esp32/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_pm/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_ringbuf/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD=. -fmacro-prefix-map=E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -MD -MT esp-idf/use_gptimer/CMakeFiles/__idf_use_gptimer.dir/use_gptimer.c.obj -MF esp-idf\use_gptimer\CMakeFiles\__idf_use_gptimer.dir\use_gptimer.c.obj.d -o esp-idf/use_gptimer/CMakeFiles/__idf_use_gptimer.dir/use_gptimer.c.obj -c E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/use_gptimer/use_gptimer.c
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/use_gptimer/use_gptimer.c: In function 'change_count_callback':
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/use_gptimer/use_gptimer.c:4:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+    4 | {
+      | ^
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/use_gptimer/use_gptimer.c:41:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   41 | {
+      | ^
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/use_gptimer/use_gptimer.c:65:84: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   65 | void delete_timer(gptimer_handle_t *timer, example_queue_timerid_t *queue_timer_cb){
+      |                                                                                    ^
+In file included from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/use_gptimer/use_gptimer.c:1:
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/use_gptimer/use_gptimer.h:30:6: error: old-style parameter declarations in prototyped function definition
+   30 | void change_count_callback(gptimer_handle_t *timer, example_queue_timerid_t *queue_timer_cb, gptimer_alarm_cb_t alarm_cb, int alarm_value)
+      |      ^~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/use_gptimer/use_gptimer.c:78: error: expected '{' at end of input
+In file included from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/use_gptimer/use_gptimer.c:1:
+At top level:
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/use_gptimer/use_gptimer.h:14:20: warning: 'TAG_GPTIMER' defined but not used [-Wunused-variable]
+   14 | static const char *TAG_GPTIMER = "USE_GPTIMER";
+      |                    ^~~~~~~~~~~
+[3/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/use_gp2timer.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/use_gp2timer.c.obj 
+ccache E:\ESP_IDF\Espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DUNITY_INCLUDE_CONFIG_H -IE:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/build/config -IE:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/newlib/platform_include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/FreeRTOS-Kernel/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/esp_additions/include/freertos -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/esp_additions/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include/soc -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include/soc/esp32 -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/port/esp32/. -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/port/esp32/private_include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/heap/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/log/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/soc/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/soc/esp32/. -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/soc/esp32/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/esp32/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/platform_port/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/include/esp32 -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32 -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_common/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/port/soc -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/port/include/private -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/xtensa/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/xtensa/esp32/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include/apps -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include/apps/sntp -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/lwip/src/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/port/esp32/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/port/esp32/include/arch -IE:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/managed_components/espressif__mdns/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/console -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/vfs/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_netif/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_event/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_ringbuf/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/efuse/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/efuse/esp32/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/deprecated -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/esp32/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_pm/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/port/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/mbedtls/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/mbedtls/library -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/esp_crt_bundle/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_app_format/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader_support/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader_support/bootloader_flash/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_partition/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/app_update/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/spi_flash/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/pthread/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_timer/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/app_trace/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/nvs_flash/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_phy/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_phy/esp32/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/wpa_supplicant/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/wpa_supplicant/port/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/wpa_supplicant/esp_supplicant/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_wifi/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/unity/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/unity/unity/src -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/cmock/CMock/src -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/http_parser -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp-tls -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp-tls/esp-tls-crypto -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/interface -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/esp32/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/deprecated/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_eth/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_gdbstub/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_gdbstub/xtensa -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_gdbstub/esp32 -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hid/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/tcp_transport/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_http_client/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_http_server/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_https_ota/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_lcd/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_lcd/interface -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/protobuf-c/protobuf-c -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/protocomm/include/common -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/protocomm/include/security -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/protocomm/include/transports -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_local_ctrl/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_psram/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/espcoredump/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/espcoredump/include/port/xtensa -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/wear_levelling/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/sdmmc/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/fatfs/diskio -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/fatfs/vfs -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/fatfs/src -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/idf_test/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/idf_test/include/esp32 -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/ieee802154/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/json/cJSON -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/mqtt/esp-mqtt/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/perfmon/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/spiffs/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/ulp/ulp_common/include -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/ulp/ulp_common/include/esp32 -IE:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/wifi_provisioning/include -IE:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm -IE:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/esp_idf_lib_helpers/include -IE:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/dht -IE:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/esp32-HD44780/driver/include -IE:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/keypad -IE:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/nvs_memory/include -IE:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/library_mqtt_broker -IE:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/espconfiguration -IE:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/library_uart -IE:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/use_gptimer -IE:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/wifi_manager/src -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD=. -fmacro-prefix-map=E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -Wno-format -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/use_gp2timer.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\use_gp2timer.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/use_gp2timer.c.obj -c E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c
+In file included from E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:14,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:11,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:5:
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/gpio_types.h: In function 'change_count_callback':
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/gpio_types.h:20:3: error: storage class specified for parameter 'gpio_port_t'
+   20 | } gpio_port_t;
+      |   ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/gpio_types.h:116:3: error: storage class specified for parameter 'gpio_num_t'
+  116 | } gpio_num_t;
+      |   ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/gpio_types.h:361:3: error: storage class specified for parameter 'gpio_int_type_t'
+  361 | } gpio_int_type_t;
+      |   ^~~~~~~~~~~~~~~
+In file included from E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:14,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:11,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:5:
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/gpio_types.h:377:3: error: storage class specified for parameter 'gpio_mode_t'
+  377 | } gpio_mode_t;
+      |   ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/gpio_types.h:382:3: error: storage class specified for parameter 'gpio_pullup_t'
+  382 | } gpio_pullup_t;
+      |   ^~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/gpio_types.h:387:3: error: storage class specified for parameter 'gpio_pulldown_t'
+  387 | } gpio_pulldown_t;
+      |   ^~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/gpio_types.h:394:3: error: storage class specified for parameter 'gpio_pull_mode_t'
+  394 | } gpio_pull_mode_t;
+      |   ^~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/gpio_types.h:403:3: error: storage class specified for parameter 'gpio_drive_cap_t'
+  403 | } gpio_drive_cap_t;
+      |   ^~~~~~~~~~~~~~~~
+In file included from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:11,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:5:
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:32:23: error: storage class specified for parameter 'gpio_isr_handle_t'
+   32 | typedef intr_handle_t gpio_isr_handle_t;
+      |                       ^~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:39:16: error: storage class specified for parameter 'gpio_isr_t'
+   39 | typedef void (*gpio_isr_t)(void *arg);
+      |                ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:46:5: error: expected specifier-qualifier-list before 'gpio_mode_t'
+   46 |     gpio_mode_t mode;               /*!< GPIO mode: set input/output mode                     */
+      |     ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:50:3: error: storage class specified for parameter 'gpio_config_t'
+   50 | } gpio_config_t;
+      |   ^~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:64:29: error: type defaults to 'int' in declaration of 'gpio_config_t' [-Werror=implicit-int]
+   64 | esp_err_t gpio_config(const gpio_config_t *pGPIOConfig);
+      |                             ^~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:64:43: error: expected ';', ',' or ')' before '*' token
+   64 | esp_err_t gpio_config(const gpio_config_t *pGPIOConfig);
+      |                                           ^
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:77:26: error: expected declaration specifiers or '...' before 'gpio_num_t'
+   77 | esp_err_t gpio_reset_pin(gpio_num_t gpio_num);
+      |                          ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:90:30: error: expected declaration specifiers or '...' before 'gpio_num_t'
+   90 | esp_err_t gpio_set_intr_type(gpio_num_t gpio_num, gpio_int_type_t intr_type);
+      |                              ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:90:51: error: expected declaration specifiers or '...' before 'gpio_int_type_t'
+   90 | esp_err_t gpio_set_intr_type(gpio_num_t gpio_num, gpio_int_type_t intr_type);
+      |                                                   ^~~~~~~~~~~~~~~
+In file included from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:11,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:5:
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:108:28: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  108 | esp_err_t gpio_intr_enable(gpio_num_t gpio_num);
+      |                            ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:122:29: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  122 | esp_err_t gpio_intr_disable(gpio_num_t gpio_num);
+      |                             ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:137:26: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  137 | esp_err_t gpio_set_level(gpio_num_t gpio_num, uint32_t level);
+      |                          ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:151:20: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  151 | int gpio_get_level(gpio_num_t gpio_num);
+      |                    ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:166:30: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  166 | esp_err_t gpio_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      |                              ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:166:51: error: expected declaration specifiers or '...' before 'gpio_mode_t'
+  166 | esp_err_t gpio_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      |                                                   ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:181:30: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  181 | esp_err_t gpio_set_pull_mode(gpio_num_t gpio_num, gpio_pull_mode_t pull);
+      |                              ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:181:51: error: expected declaration specifiers or '...' before 'gpio_pull_mode_t'
+  181 | esp_err_t gpio_set_pull_mode(gpio_num_t gpio_num, gpio_pull_mode_t pull);
+      |                                                   ^~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:194:30: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  194 | esp_err_t gpio_wakeup_enable(gpio_num_t gpio_num, gpio_int_type_t intr_type);
+      |                              ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:194:51: error: expected declaration specifiers or '...' before 'gpio_int_type_t'
+  194 | esp_err_t gpio_wakeup_enable(gpio_num_t gpio_num, gpio_int_type_t intr_type);
+      |                                                   ^~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:205:31: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  205 | esp_err_t gpio_wakeup_disable(gpio_num_t gpio_num);
+      |                               ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:231:82: error: expected declaration specifiers or '...' before 'gpio_isr_handle_t'
+  231 | esp_err_t gpio_isr_register(void (*fn)(void *), void *arg, int intr_alloc_flags, gpio_isr_handle_t *handle);
+      |                                                                                  ^~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:242:26: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  242 | esp_err_t gpio_pullup_en(gpio_num_t gpio_num);
+      |                          ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:253:27: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  253 | esp_err_t gpio_pullup_dis(gpio_num_t gpio_num);
+      |                           ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:264:28: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  264 | esp_err_t gpio_pulldown_en(gpio_num_t gpio_num);
+      |                            ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:275:29: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  275 | esp_err_t gpio_pulldown_dis(gpio_num_t gpio_num);
+      |                             ^~~~~~~~~~
+In file included from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:11,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:5:
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:323:32: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  323 | esp_err_t gpio_isr_handler_add(gpio_num_t gpio_num, gpio_isr_t isr_handler, void *args);
+      |                                ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:323:53: error: expected declaration specifiers or '...' before 'gpio_isr_t'
+  323 | esp_err_t gpio_isr_handler_add(gpio_num_t gpio_num, gpio_isr_t isr_handler, void *args);
+      |                                                     ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:335:35: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  335 | esp_err_t gpio_isr_handler_remove(gpio_num_t gpio_num);
+      |                                   ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:347:37: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  347 | esp_err_t gpio_set_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t strength);
+      |                                     ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:347:58: error: expected declaration specifiers or '...' before 'gpio_drive_cap_t'
+  347 | esp_err_t gpio_set_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t strength);
+      |                                                          ^~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:359:37: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  359 | esp_err_t gpio_get_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t *strength);
+      |                                     ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:359:58: error: expected declaration specifiers or '...' before 'gpio_drive_cap_t'
+  359 | esp_err_t gpio_get_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t *strength);
+      |                                                          ^~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:386:24: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  386 | esp_err_t gpio_hold_en(gpio_num_t gpio_num);
+      |                        ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:405:25: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  405 | esp_err_t gpio_hold_dis(gpio_num_t gpio_num);
+      |                         ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:471:29: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  471 | esp_err_t gpio_sleep_sel_en(gpio_num_t gpio_num);
+      |                             ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:480:30: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  480 | esp_err_t gpio_sleep_sel_dis(gpio_num_t gpio_num);
+      |                              ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:494:36: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  494 | esp_err_t gpio_sleep_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      |                                    ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:494:57: error: expected declaration specifiers or '...' before 'gpio_mode_t'
+  494 | esp_err_t gpio_sleep_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      |                                                         ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:508:36: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  508 | esp_err_t gpio_sleep_set_pull_mode(gpio_num_t gpio_num, gpio_pull_mode_t pull);
+      |                                    ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/gpio.h:508:57: error: expected declaration specifiers or '...' before 'gpio_pull_mode_t'
+  508 | esp_err_t gpio_sleep_set_pull_mode(gpio_num_t gpio_num, gpio_pull_mode_t pull);
+      |                                                         ^~~~~~~~~~~~~~~~
+In file included from E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:11,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:12,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:5:
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/ledc_types.h:23:3: error: storage class specified for parameter 'ledc_mode_t'
+   23 | } ledc_mode_t;
+      |   ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/ledc_types.h:29:3: error: storage class specified for parameter 'ledc_intr_type_t'
+   29 | } ledc_intr_type_t;
+      |   ^~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/ledc_types.h:35:3: error: storage class specified for parameter 'ledc_duty_direction_t'
+   35 | } ledc_duty_direction_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/ledc_types.h:48:3: error: storage class specified for parameter 'ledc_slow_clk_sel_t'
+   48 | } ledc_slow_clk_sel_t;
+      |   ^~~~~~~~~~~~~~~~~~~
+In file included from E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:11,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:12,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:5:
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/ledc_types.h:71:3: error: storage class specified for parameter 'ledc_clk_cfg_t'
+   71 | } ledc_clk_cfg_t;
+      |   ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/ledc_types.h:86:3: error: storage class specified for parameter 'ledc_clk_src_t'
+   86 | } ledc_clk_src_t;
+      |   ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/ledc_types.h:94:3: error: storage class specified for parameter 'ledc_timer_t'
+   94 | } ledc_timer_t;
+      |   ^~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/ledc_types.h:108:3: error: storage class specified for parameter 'ledc_channel_t'
+  108 | } ledc_channel_t;
+      |   ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/ledc_types.h:134:3: error: storage class specified for parameter 'ledc_timer_bit_t'
+  134 | } ledc_timer_bit_t;
+      |   ^~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/ledc_types.h:140:3: error: storage class specified for parameter 'ledc_fade_mode_t'
+  140 | } ledc_fade_mode_t;
+      |   ^~~~~~~~~~~~~~~~
+In file included from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:12,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:5:
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:41:5: error: expected specifier-qualifier-list before 'ledc_mode_t'
+   41 |     ledc_mode_t speed_mode;         /*!< LEDC speed speed_mode, high-speed mode or low-speed mode */
+      |     ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:51:3: error: storage class specified for parameter 'ledc_channel_config_t'
+   51 | } ledc_channel_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:57:5: error: expected specifier-qualifier-list before 'ledc_mode_t'
+   57 |     ledc_mode_t speed_mode;                /*!< LEDC speed speed_mode, high-speed mode or low-speed mode */
+      |     ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:68:3: error: storage class specified for parameter 'ledc_timer_config_t'
+   68 | } ledc_timer_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:70:23: error: storage class specified for parameter 'ledc_isr_handle_t'
+   70 | typedef intr_handle_t ledc_isr_handle_t;
+      |                       ^~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:77:3: error: storage class specified for parameter 'ledc_cb_event_t'
+   77 | } ledc_cb_event_t;
+      |   ^~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:83:5: error: expected specifier-qualifier-list before 'ledc_cb_event_t'
+   83 |     ledc_cb_event_t event;              /**< Event name */
+      |     ^~~~~~~~~~~~~~~
+In file included from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:12,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:5:
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:87:3: error: storage class specified for parameter 'ledc_cb_param_t'
+   87 | } ledc_cb_param_t;
+      |   ^~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:95:33: error: type defaults to 'int' in declaration of 'ledc_cb_param_t' [-Werror=implicit-int]
+   95 | typedef bool (*ledc_cb_t)(const ledc_cb_param_t *param, void *user_arg);
+      |                                 ^~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:95:49: error: expected ';', ',' or ')' before '*' token
+   95 | typedef bool (*ledc_cb_t)(const ledc_cb_param_t *param, void *user_arg);
+      |                                                 ^
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:102:5: error: unknown type name 'ledc_cb_t'
+  102 |     ledc_cb_t fade_cb;                  /**< LEDC fade_end callback function */
+      |     ^~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:103:3: error: storage class specified for parameter 'ledc_cbs_t'
+  103 | } ledc_cbs_t;
+      |   ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:115:37: error: type defaults to 'int' in declaration of 'ledc_channel_config_t' [-Werror=implicit-int]
+  115 | esp_err_t ledc_channel_config(const ledc_channel_config_t *ledc_conf);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:115:59: error: expected ';', ',' or ')' before '*' token
+  115 | esp_err_t ledc_channel_config(const ledc_channel_config_t *ledc_conf);
+      |                                                           ^
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:128:35: error: type defaults to 'int' in declaration of 'ledc_timer_config_t' [-Werror=implicit-int]
+  128 | esp_err_t ledc_timer_config(const ledc_timer_config_t *timer_conf);
+      |                                   ^~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:128:55: error: expected ';', ',' or ')' before '*' token
+  128 | esp_err_t ledc_timer_config(const ledc_timer_config_t *timer_conf);
+      |                                                       ^
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:146:28: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  146 | esp_err_t ledc_update_duty(ledc_mode_t speed_mode, ledc_channel_t channel);
+      |                            ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:146:52: error: expected declaration specifiers or '...' before 'ledc_channel_t'
+  146 | esp_err_t ledc_update_duty(ledc_mode_t speed_mode, ledc_channel_t channel);
+      |                                                    ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:162:38: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  162 | esp_err_t ledc_set_pin(int gpio_num, ledc_mode_t speed_mode, ledc_channel_t ledc_channel);
+      |                                      ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:162:62: error: expected declaration specifiers or '...' before 'ledc_channel_t'
+  162 | esp_err_t ledc_set_pin(int gpio_num, ledc_mode_t speed_mode, ledc_channel_t ledc_channel);
+      |                                                              ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:176:21: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  176 | esp_err_t ledc_stop(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t idle_level);
+      |                     ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:176:45: error: expected declaration specifiers or '...' before 'ledc_channel_t'
+  176 | esp_err_t ledc_stop(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t idle_level);
+      |                                             ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:190:25: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  190 | esp_err_t ledc_set_freq(ledc_mode_t speed_mode, ledc_timer_t timer_num, uint32_t freq_hz);
+      |                         ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:190:49: error: expected declaration specifiers or '...' before 'ledc_timer_t'
+  190 | esp_err_t ledc_set_freq(ledc_mode_t speed_mode, ledc_timer_t timer_num, uint32_t freq_hz);
+      |                                                 ^~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:202:24: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  202 | uint32_t ledc_get_freq(ledc_mode_t speed_mode, ledc_timer_t timer_num);
+      |                        ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:202:48: error: expected declaration specifiers or '...' before 'ledc_timer_t'
+  202 | uint32_t ledc_get_freq(ledc_mode_t speed_mode, ledc_timer_t timer_num);
+      |                                                ^~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:221:37: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  221 | esp_err_t ledc_set_duty_with_hpoint(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t duty, uint32_t hpoint);
+      |                                     ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:221:61: error: expected declaration specifiers or '...' before 'ledc_channel_t'
+  221 | esp_err_t ledc_set_duty_with_hpoint(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t duty, uint32_t hpoint);
+      |                                                             ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:232:21: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  232 | int ledc_get_hpoint(ledc_mode_t speed_mode, ledc_channel_t channel);
+      |                     ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:232:45: error: expected declaration specifiers or '...' before 'ledc_channel_t'
+  232 | int ledc_get_hpoint(ledc_mode_t speed_mode, ledc_channel_t channel);
+      |                                             ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:251:25: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  251 | esp_err_t ledc_set_duty(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t duty);
+      |                         ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:251:49: error: expected declaration specifiers or '...' before 'ledc_channel_t'
+  251 | esp_err_t ledc_set_duty(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t duty);
+      |                                                 ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:266:24: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  266 | uint32_t ledc_get_duty(ledc_mode_t speed_mode, ledc_channel_t channel);
+      |                        ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:266:48: error: expected declaration specifiers or '...' before 'ledc_channel_t'
+  266 | uint32_t ledc_get_duty(ledc_mode_t speed_mode, ledc_channel_t channel);
+      |                                                ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:285:25: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  285 | esp_err_t ledc_set_fade(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t duty, ledc_duty_direction_t fade_direction,
+      |                         ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:285:49: error: expected declaration specifiers or '...' before 'ledc_channel_t'
+  285 | esp_err_t ledc_set_fade(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t duty, ledc_duty_direction_t fade_direction,
+      |                                                 ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:285:88: error: expected declaration specifiers or '...' before 'ledc_duty_direction_t'
+  285 | esp_err_t ledc_set_fade(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t duty, ledc_duty_direction_t fade_direction,
+      |                                                                                        ^~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:303:82: error: expected declaration specifiers or '...' before 'ledc_isr_handle_t'
+  303 | esp_err_t ledc_isr_register(void (*fn)(void *), void *arg, int intr_alloc_flags, ledc_isr_handle_t *handle);
+      |                                                                                  ^~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:318:26: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  318 | esp_err_t ledc_timer_set(ledc_mode_t speed_mode, ledc_timer_t timer_sel, uint32_t clock_divider, uint32_t duty_resolution, ledc_clk_src_t clk_src);
+      |                          ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:318:50: error: expected declaration specifiers or '...' before 'ledc_timer_t'
+  318 | esp_err_t ledc_timer_set(ledc_mode_t speed_mode, ledc_timer_t timer_sel, uint32_t clock_divider, uint32_t duty_resolution, ledc_clk_src_t clk_src);
+      |                                                  ^~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:318:124: error: expected declaration specifiers or '...' before 'ledc_clk_src_t'
+  318 | esp_err_t ledc_timer_set(ledc_mode_t speed_mode, ledc_timer_t timer_sel, uint32_t clock_divider, uint32_t duty_resolution, ledc_clk_src_t clk_src);
+      |                                                                                                                            ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:330:26: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  330 | esp_err_t ledc_timer_rst(ledc_mode_t speed_mode, ledc_timer_t timer_sel);
+      |                          ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:330:50: error: expected declaration specifiers or '...' before 'ledc_timer_t'
+  330 | esp_err_t ledc_timer_rst(ledc_mode_t speed_mode, ledc_timer_t timer_sel);
+      |                                                  ^~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:343:28: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  343 | esp_err_t ledc_timer_pause(ledc_mode_t speed_mode, ledc_timer_t timer_sel);
+      |                            ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:343:52: error: expected declaration specifiers or '...' before 'ledc_timer_t'
+  343 | esp_err_t ledc_timer_pause(ledc_mode_t speed_mode, ledc_timer_t timer_sel);
+      |                                                    ^~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:355:29: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  355 | esp_err_t ledc_timer_resume(ledc_mode_t speed_mode, ledc_timer_t timer_sel);
+      |                             ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:355:53: error: expected declaration specifiers or '...' before 'ledc_timer_t'
+  355 | esp_err_t ledc_timer_resume(ledc_mode_t speed_mode, ledc_timer_t timer_sel);
+      |                                                     ^~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:368:35: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  368 | esp_err_t ledc_bind_channel_timer(ledc_mode_t speed_mode, ledc_channel_t channel, ledc_timer_t timer_sel);
+      |                                   ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:368:59: error: expected declaration specifiers or '...' before 'ledc_channel_t'
+  368 | esp_err_t ledc_bind_channel_timer(ledc_mode_t speed_mode, ledc_channel_t channel, ledc_timer_t timer_sel);
+      |                                                           ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:368:83: error: expected declaration specifiers or '...' before 'ledc_timer_t'
+  368 | esp_err_t ledc_bind_channel_timer(ledc_mode_t speed_mode, ledc_channel_t channel, ledc_timer_t timer_sel);
+      |                                                                                   ^~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:391:35: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  391 | esp_err_t ledc_set_fade_with_step(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t target_duty, uint32_t scale, uint32_t cycle_num);
+      |                                   ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:391:59: error: expected declaration specifiers or '...' before 'ledc_channel_t'
+  391 | esp_err_t ledc_set_fade_with_step(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t target_duty, uint32_t scale, uint32_t cycle_num);
+      |                                                           ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:413:35: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  413 | esp_err_t ledc_set_fade_with_time(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t target_duty, int max_fade_time_ms);
+      |                                   ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:413:59: error: expected declaration specifiers or '...' before 'ledc_channel_t'
+  413 | esp_err_t ledc_set_fade_with_time(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t target_duty, int max_fade_time_ms);
+      |                                                           ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:449:27: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  449 | esp_err_t ledc_fade_start(ledc_mode_t speed_mode, ledc_channel_t channel, ledc_fade_mode_t fade_mode);
+      |                           ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:449:51: error: expected declaration specifiers or '...' before 'ledc_channel_t'
+  449 | esp_err_t ledc_fade_start(ledc_mode_t speed_mode, ledc_channel_t channel, ledc_fade_mode_t fade_mode);
+      |                                                   ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:449:75: error: expected declaration specifiers or '...' before 'ledc_fade_mode_t'
+  449 | esp_err_t ledc_fade_start(ledc_mode_t speed_mode, ledc_channel_t channel, ledc_fade_mode_t fade_mode);
+      |                                                                           ^~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:479:36: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  479 | esp_err_t ledc_set_duty_and_update(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t duty, uint32_t hpoint);
+      |                                    ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:479:60: error: expected declaration specifiers or '...' before 'ledc_channel_t'
+  479 | esp_err_t ledc_set_duty_and_update(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t duty, uint32_t hpoint);
+      |                                                            ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:497:40: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  497 | esp_err_t ledc_set_fade_time_and_start(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t target_duty, uint32_t max_fade_time_ms, ledc_fade_mode_t fade_mode);
+      |                                        ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:497:64: error: expected declaration specifiers or '...' before 'ledc_channel_t'
+  497 | esp_err_t ledc_set_fade_time_and_start(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t target_duty, uint32_t max_fade_time_ms, ledc_fade_mode_t fade_mode);
+      |                                                                ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:497:137: error: expected declaration specifiers or '...' before 'ledc_fade_mode_t'
+  497 | esp_err_t ledc_set_fade_time_and_start(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t target_duty, uint32_t max_fade_time_ms, ledc_fade_mode_t fade_mode);
+      |                                                                                                                                         ^~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:516:40: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  516 | esp_err_t ledc_set_fade_step_and_start(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t target_duty, uint32_t scale, uint32_t cycle_num, ledc_fade_mode_t fade_mode);
+      |                                        ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:516:64: error: expected declaration specifiers or '...' before 'ledc_channel_t'
+  516 | esp_err_t ledc_set_fade_step_and_start(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t target_duty, uint32_t scale, uint32_t cycle_num, ledc_fade_mode_t fade_mode);
+      |                                                                ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:516:146: error: expected declaration specifiers or '...' before 'ledc_fade_mode_t'
+  516 | esp_err_t ledc_set_fade_step_and_start(ledc_mode_t speed_mode, ledc_channel_t channel, uint32_t target_duty, uint32_t scale, uint32_t cycle_num, ledc_fade_mode_t fade_mode);
+      |                                                                                                                                                  ^~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:531:28: error: expected declaration specifiers or '...' before 'ledc_mode_t'
+  531 | esp_err_t ledc_cb_register(ledc_mode_t speed_mode, ledc_channel_t channel, ledc_cbs_t *cbs, void *user_arg);
+      |                            ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:531:52: error: expected declaration specifiers or '...' before 'ledc_channel_t'
+  531 | esp_err_t ledc_cb_register(ledc_mode_t speed_mode, ledc_channel_t channel, ledc_cbs_t *cbs, void *user_arg);
+      |                                                    ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include/driver/ledc.h:531:76: error: expected declaration specifiers or '...' before 'ledc_cbs_t'
+  531 | esp_err_t ledc_cb_register(ledc_mode_t speed_mode, ledc_channel_t channel, ledc_cbs_t *cbs, void *user_arg);
+      |                                                                            ^~~~~~~~~~
+In file included from E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:12,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:14,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:5:
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/adc_types.h:20:3: error: storage class specified for parameter 'adc_unit_t'
+   20 | } adc_unit_t;
+      |   ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/adc_types.h:36:3: error: storage class specified for parameter 'adc_channel_t'
+   36 | } adc_channel_t;
+      |   ^~~~~~~~~~~~~
+In file included from E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:12,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:14,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:5:
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/adc_types.h:46:3: error: storage class specified for parameter 'adc_atten_t'
+   46 | } adc_atten_t;
+      |   ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/adc_types.h:55:3: error: storage class specified for parameter 'adc_bitwidth_t'
+   55 | } adc_bitwidth_t;
+      |   ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/adc_types.h:61:3: error: storage class specified for parameter 'adc_ulp_mode_t'
+   61 | } adc_ulp_mode_t;
+      |   ^~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/adc_types.h:71:3: error: storage class specified for parameter 'adc_digi_convert_mode_t'
+   71 | } adc_digi_convert_mode_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/adc_types.h:79:3: error: storage class specified for parameter 'adc_digi_output_format_t'
+   79 | } adc_digi_output_format_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/adc_types.h:89:3: error: storage class specified for parameter 'adc_digi_pattern_config_t'
+   89 | } adc_digi_pattern_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include/hal/adc_types.h:117:3: error: storage class specified for parameter 'adc_digi_output_data_t'
+  117 | } adc_digi_output_data_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:14,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:5:
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:21:40: error: storage class specified for parameter 'adc_oneshot_unit_handle_t'
+   21 | typedef struct adc_oneshot_unit_ctx_t *adc_oneshot_unit_handle_t;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:27:5: error: expected specifier-qualifier-list before 'adc_unit_t'
+   27 |     adc_unit_t unit_id;             ///< ADC unit
+      |     ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:29:3: error: storage class specified for parameter 'adc_oneshot_unit_init_cfg_t'
+   29 | } adc_oneshot_unit_init_cfg_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:35:5: error: expected specifier-qualifier-list before 'adc_atten_t'
+   35 |     adc_atten_t atten;              ///< ADC attenuation
+      |     ^~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:37:3: error: storage class specified for parameter 'adc_oneshot_chan_cfg_t'
+   37 | } adc_oneshot_chan_cfg_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:53:38: error: type defaults to 'int' in declaration of 'adc_oneshot_unit_init_cfg_t' [-Werror=implicit-int]
+   53 | esp_err_t adc_oneshot_new_unit(const adc_oneshot_unit_init_cfg_t *init_config, adc_oneshot_unit_handle_t *ret_unit);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:53:66: error: expected ';', ',' or ')' before '*' token
+   53 | esp_err_t adc_oneshot_new_unit(const adc_oneshot_unit_init_cfg_t *init_config, adc_oneshot_unit_handle_t *ret_unit);
+      |                                                                  ^
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:68:38: error: expected declaration specifiers or '...' before 'adc_oneshot_unit_handle_t'
+   68 | esp_err_t adc_oneshot_config_channel(adc_oneshot_unit_handle_t handle, adc_channel_t channel, const adc_oneshot_chan_cfg_t *config);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:68:72: error: expected declaration specifiers or '...' before 'adc_channel_t'
+   68 | esp_err_t adc_oneshot_config_channel(adc_oneshot_unit_handle_t handle, adc_channel_t channel, const adc_oneshot_chan_cfg_t *config);
+      |                                                                        ^~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:68:101: error: type defaults to 'int' in declaration of 'adc_oneshot_chan_cfg_t' [-Werror=implicit-int]
+   68 | esp_err_t adc_oneshot_config_channel(adc_oneshot_unit_handle_t handle, adc_channel_t channel, const adc_oneshot_chan_cfg_t *config);
+      |                                                                                                     ^~~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:68:124: error: expected ';', ',' or ')' before '*' token
+   68 | esp_err_t adc_oneshot_config_channel(adc_oneshot_unit_handle_t handle, adc_channel_t channel, const adc_oneshot_chan_cfg_t *config);
+      |                                                                                                                            ^
+In file included from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:14,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:5:
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:85:28: error: expected declaration specifiers or '...' before 'adc_oneshot_unit_handle_t'
+   85 | esp_err_t adc_oneshot_read(adc_oneshot_unit_handle_t handle, adc_channel_t chan, int *out_raw);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:85:62: error: expected declaration specifiers or '...' before 'adc_channel_t'
+   85 | esp_err_t adc_oneshot_read(adc_oneshot_unit_handle_t handle, adc_channel_t chan, int *out_raw);
+      |                                                              ^~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:99:32: error: expected declaration specifiers or '...' before 'adc_oneshot_unit_handle_t'
+   99 | esp_err_t adc_oneshot_del_unit(adc_oneshot_unit_handle_t handle);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:113:49: error: expected declaration specifiers or '...' before 'adc_unit_t'
+  113 | esp_err_t adc_oneshot_io_to_channel(int io_num, adc_unit_t *unit_id, adc_channel_t *channel);
+      |                                                 ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:113:70: error: expected declaration specifiers or '...' before 'adc_channel_t'
+  113 | esp_err_t adc_oneshot_io_to_channel(int io_num, adc_unit_t *unit_id, adc_channel_t *channel);
+      |                                                                      ^~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:126:37: error: expected declaration specifiers or '...' before 'adc_unit_t'
+  126 | esp_err_t adc_oneshot_channel_to_io(adc_unit_t unit_id, adc_channel_t channel, int *io_num);
+      |                                     ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_oneshot.h:126:57: error: expected declaration specifiers or '...' before 'adc_channel_t'
+  126 | esp_err_t adc_oneshot_channel_to_io(adc_unit_t unit_id, adc_channel_t channel, int *io_num);
+      |                                                         ^~~~~~~~~~~~~
+In file included from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:16,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:5:
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_cali.h:20:35: error: storage class specified for parameter 'adc_cali_handle_t'
+   20 | typedef struct adc_cali_scheme_t *adc_cali_handle_t;
+      |                                   ^~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_cali.h:28:3: error: storage class specified for parameter 'adc_cali_scheme_ver_t'
+   28 | } adc_cali_scheme_ver_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_cali.h:40:33: error: expected declaration specifiers or '...' before 'adc_cali_scheme_ver_t'
+   40 | esp_err_t adc_cali_check_scheme(adc_cali_scheme_ver_t *scheme_mask);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_cali.h:54:35: error: expected declaration specifiers or '...' before 'adc_cali_handle_t'
+   54 | esp_err_t adc_cali_raw_to_voltage(adc_cali_handle_t handle, int raw, int *voltage);
+      |                                   ^~~~~~~~~~~~~~~~~
+In file included from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:17,
+                 from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:5:
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_cali_scheme.h:70:3: error: storage class specified for parameter 'adc_cali_line_fitting_efuse_val_t'
+   70 | } adc_cali_line_fitting_efuse_val_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_cali_scheme.h:73:5: error: expected specifier-qualifier-list before 'adc_unit_t'
+   73 |     adc_unit_t unit_id;         ///< ADC unit
+      |     ^~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_cali_scheme.h:85:3: error: storage class specified for parameter 'adc_cali_line_fitting_config_t'
+   85 | } adc_cali_line_fitting_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_cali_scheme.h:102:53: error: type defaults to 'int' in declaration of 'adc_cali_line_fitting_config_t' [-Werror=implicit-int]
+  102 | esp_err_t adc_cali_create_scheme_line_fitting(const adc_cali_line_fitting_config_t *config, adc_cali_handle_t *ret_handle);
+      |                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_cali_scheme.h:102:84: error: expected ';', ',' or ')' before '*' token
+  102 | esp_err_t adc_cali_create_scheme_line_fitting(const adc_cali_line_fitting_config_t *config, adc_cali_handle_t *ret_handle);
+      |                                                                                    ^
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_cali_scheme.h:113:47: error: expected declaration specifiers or '...' before 'adc_cali_handle_t'
+  113 | esp_err_t adc_cali_delete_scheme_line_fitting(adc_cali_handle_t handle);
+      |                                               ^~~~~~~~~~~~~~~~~
+E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include/esp_adc/adc_cali_scheme.h:129:52: error: expected declaration specifiers or '...' before 'adc_cali_line_fitting_efuse_val_t'
+  129 | esp_err_t adc_cali_scheme_line_fitting_check_efuse(adc_cali_line_fitting_efuse_val_t *cali_val);
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:5:
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:21:20: error: storage class specified for parameter 'TagReadADC'
+   21 | const static char *TagReadADC = "EXAMPLE";
+      |                    ^~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:21:1: error: parameter 'TagReadADC' is initialized
+   21 | const static char *TagReadADC = "EXAMPLE";
+      | ^~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:25:19: error: expected declaration specifiers or '...' before 'gpio_num_t'
+   25 | void input_button(gpio_num_t PIN);
+      |                   ^~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:26:25: error: expected declaration specifiers or '...' before 'gpio_num_t'
+   26 | uint8_t input_get_level(gpio_num_t PIN);
+      |                         ^~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:36:25: error: expected declaration specifiers or '...' before 'adc_unit_t'
+   36 | void adc_oneshot_config(adc_unit_t adc_uint, adc_oneshot_unit_handle_t *adc_handle, adc_channel_t channel, adc_bitwidth_t *resolution, adc_atten_t *atten_db);
+      |                         ^~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:36:46: error: expected declaration specifiers or '...' before 'adc_oneshot_unit_handle_t'
+   36 | void adc_oneshot_config(adc_unit_t adc_uint, adc_oneshot_unit_handle_t *adc_handle, adc_channel_t channel, adc_bitwidth_t *resolution, adc_atten_t *atten_db);
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:36:85: error: expected declaration specifiers or '...' before 'adc_channel_t'
+   36 | void adc_oneshot_config(adc_unit_t adc_uint, adc_oneshot_unit_handle_t *adc_handle, adc_channel_t channel, adc_bitwidth_t *resolution, adc_atten_t *atten_db);
+      |                                                                                     ^~~~~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:36:108: error: expected declaration specifiers or '...' before 'adc_bitwidth_t'
+   36 | void adc_oneshot_config(adc_unit_t adc_uint, adc_oneshot_unit_handle_t *adc_handle, adc_channel_t channel, adc_bitwidth_t *resolution, adc_atten_t *atten_db);
+      |                                                                                                            ^~~~~~~~~~~~~~
+In file included from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:5:
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:36:136: error: expected declaration specifiers or '...' before 'adc_atten_t'
+   36 | void adc_oneshot_config(adc_unit_t adc_uint, adc_oneshot_unit_handle_t *adc_handle, adc_channel_t channel, adc_bitwidth_t *resolution, adc_atten_t *atten_db);
+      |                                                                                                                                        ^~~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:38:34: error: expected declaration specifiers or '...' before 'adc_unit_t'
+   38 | void adc_converts_voltage_config(adc_unit_t uint, adc_cali_handle_t *adc_cali_handle, adc_atten_t atten_db, bool *do_calibration1);
+      |                                  ^~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:38:51: error: expected declaration specifiers or '...' before 'adc_cali_handle_t'
+   38 | void adc_converts_voltage_config(adc_unit_t uint, adc_cali_handle_t *adc_cali_handle, adc_atten_t atten_db, bool *do_calibration1);
+      |                                                   ^~~~~~~~~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:38:87: error: expected declaration specifiers or '...' before 'adc_atten_t'
+   38 | void adc_converts_voltage_config(adc_unit_t uint, adc_cali_handle_t *adc_cali_handle, adc_atten_t atten_db, bool *do_calibration1);
+      |                                                                                       ^~~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:39:35: error: expected declaration specifiers or '...' before 'adc_unit_t'
+   39 | bool example_adc_calibration_init(adc_unit_t unit, adc_atten_t atten, adc_cali_handle_t *out_handle);
+      |                                   ^~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:39:52: error: expected declaration specifiers or '...' before 'adc_atten_t'
+   39 | bool example_adc_calibration_init(adc_unit_t unit, adc_atten_t atten, adc_cali_handle_t *out_handle);
+      |                                                    ^~~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:39:71: error: expected declaration specifiers or '...' before 'adc_cali_handle_t'
+   39 | bool example_adc_calibration_init(adc_unit_t unit, adc_atten_t atten, adc_cali_handle_t *out_handle);
+      |                                                                       ^~~~~~~~~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:42:25: error: expected declaration specifiers or '...' before 'adc_oneshot_unit_handle_t'
+   42 | void adc_oneshot_delete(adc_oneshot_unit_handle_t *adc_handle, adc_cali_handle_t *adc_cali_handle, bool *do_calibration1);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:42:64: error: expected declaration specifiers or '...' before 'adc_cali_handle_t'
+   42 | void adc_oneshot_delete(adc_oneshot_unit_handle_t *adc_handle, adc_cali_handle_t *adc_cali_handle, bool *do_calibration1);
+      |                                                                ^~~~~~~~~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:43:37: error: expected declaration specifiers or '...' before 'adc_cali_handle_t'
+   43 | void example_adc_calibration_deinit(adc_cali_handle_t handle);
+      |                                     ^~~~~~~~~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:7:1: error: expected declaration specifiers before 'adc_oneshot_unit_handle_t'
+    7 | adc_oneshot_unit_handle_t adc1_handle;
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:8:1: error: expected declaration specifiers before 'adc_oneshot_unit_handle_t'
+    8 | adc_oneshot_unit_handle_t adc2_handle;
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:10:1: error: expected declaration specifiers before 'adc_channel_t'
+   10 | adc_channel_t pin_light = ADC_CHANNEL_5;
+      | ^~~~~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:11:1: error: expected declaration specifiers before 'adc_channel_t'
+   11 | adc_channel_t pin_soil = ADC_CHANNEL_9;
+      | ^~~~~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:14:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   14 | {
+      | ^
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:41:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   41 | {
+      | ^
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:68:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   68 | {
+      | ^
+In file included from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:2:
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/use_gptimer/use_gptimer.h:30:6: error: old-style parameter declarations in prototyped function definition
+   30 | void change_count_callback(gptimer_handle_t *timer, example_queue_timerid_t *queue_timer_cb, gptimer_alarm_cb_t alarm_cb, int alarm_value)
+      |      ^~~~~~~~~~~~~~~~~~~~~
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:87: error: expected '{' at end of input
+In file included from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:2:
+At top level:
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/use_gptimer/use_gptimer.h:14:20: warning: 'TAG_GPTIMER' defined but not used [-Wunused-variable]
+   14 | static const char *TAG_GPTIMER = "USE_GPTIMER";
+      |                    ^~~~~~~~~~~
+cc1.exe: some warnings being treated as errors
+ninja: build stopped: subcommand failed.

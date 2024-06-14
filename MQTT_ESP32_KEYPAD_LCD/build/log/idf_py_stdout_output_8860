@@ -1,0 +1,61 @@
+[1/12] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D E:\ESP_IDF\ESP32_GITHUB\MQTT_ESP32_KEYPAD_LCD\build\bootloader\esp-idf\esptool_py && E:\ESP_IDF\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6710 bytes. 0x8f0 bytes (8%) free.
+[2/10] Building C object esp-idf/use_gptimer/CMakeFiles/__idf_use_gptimer.dir/use_gptimer.c.obj
+[3/10] Linking C static library esp-idf\use_gptimer\libuse_gptimer.a
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/use_gp2timer.c.obj
+In file included from E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/main/use_gp2timer.c:5:
+E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/mdns/button_and_pwm/button_and_pwm.h:21:20: warning: 'TagReadADC' defined but not used [-Wunused-variable]
+   21 | const static char *TagReadADC = "EXAMPLE";
+      |                    ^~~~~~~~~~
+[5/10] Linking C static library esp-idf\main\libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable mqtt_ssl.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/build/mqtt_ssl.bin
+[9/10] cmd.exe /C "cd /D E:\ESP_IDF\ESP32_GITHUB\MQTT_ESP32_KEYPAD_LCD\build\esp-idf\esptool_py && E:\ESP_IDF\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/build/partition_table/partition-table.bin E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/build/mqtt_ssl.bin"
+mqtt_ssl.bin binary size 0x2fa20 bytes. Smallest app partition is 0x100000 bytes. 0xd05e0 bytes (81%) free.
+[9/10] cmd.exe /C "cd /D E:\ESP_IDF\Espressif\frameworks\esp-idf-v5.0.2\components\esptool_py && E:\ESP_IDF\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2 -D SERIAL_TOOL=E:/ESP_IDF/Espressif/python_env/idf5.0_py3.11_env/Scripts/python.exe;;E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/build -P E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.0.2/components/esptool_py/run_serial_tool.cmake"
+esptool esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 mqtt_ssl.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.5.1
+Serial port COM3
+Connecting....
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: e0:e2:e6:d0:89:78
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0003ffff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26384 bytes to 16451...
+Writing at 0x00001000... (50 %)
+Writing at 0x000076af... (100 %)
+Wrote 26384 bytes (16451 compressed) at 0x00001000 in 0.8 seconds (effective 254.8 kbit/s)...
+Hash of data verified.
+Compressed 195104 bytes to 102598...
+Writing at 0x00010000... (14 %)
+Writing at 0x0001c687... (28 %)
+Writing at 0x00021e1b... (42 %)
+Writing at 0x000277ec... (57 %)
+Writing at 0x0002faac... (71 %)
+Writing at 0x00038376... (85 %)
+Writing at 0x0003e0c7... (100 %)
+Wrote 195104 bytes (102598 compressed) at 0x00010000 in 2.4 seconds (effective 637.5 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 318.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

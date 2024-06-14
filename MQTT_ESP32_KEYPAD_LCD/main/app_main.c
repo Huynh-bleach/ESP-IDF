@@ -173,6 +173,7 @@ void mqtt_event_received_callback(char *data)
     // Extract values from JSON
     cJSON *kind = cJSON_GetObjectItemCaseSensitive(root, "kind");
     cJSON *val = cJSON_GetObjectItemCaseSensitive(root, "val");
+    
 
     if (cJSON_IsNumber(kind) && cJSON_IsNumber(val))
     {

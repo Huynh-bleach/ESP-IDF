@@ -444,6 +444,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/build/esp-idf/use_gptimer/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("E:/ESP_IDF/ESP32_GITHUB/MQTT_ESP32_KEYPAD_LCD/build/esp-idf/wifi_manager/cmake_install.cmake")
 endif()
 
